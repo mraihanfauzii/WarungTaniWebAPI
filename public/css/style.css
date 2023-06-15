@@ -1,0 +1,905 @@
+* {
+    font-family: 'Montserrat';
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 80px;
+    background: #6A9B45;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    margin-right: -7%;
+    font-weight: bold;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul .items{
+  margin-right: 40px;
+  padding: 0 25px;
+  display: inline-flex;
+}
+
+nav ul .search {
+  margin-right: 135px;
+  width: 500px;
+  height: 50px;
+  display: flex;
+}
+
+nav ul .search input{
+  height: 100%;
+  width: 500px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 0 10px;
+  border-radius: 20px 0 0 20px;
+}
+
+nav ul .search .icon{
+  height: 100%;
+  width: 40px;
+  line-height: 50px;
+  text-align: center;
+  background: #ddffc4;
+  border-radius: 0 20px 20px 0;
+}
+
+nav ul .search .icon:hover{
+  cursor: pointer;
+  background: #95d167;
+}
+
+nav ul .search .icon span {
+  color: #6A9B45;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav ul li i {
+  color: white;
+}
+
+/*Main*/
+
+.judul{
+  margin-left: 14%;
+  margin-bottom: -1.8%;
+}
+
+#fotogudang{
+    height: 255px;
+    background-color: #E7FFD5;
+}
+#fotogudang h4{
+    text-align: center;
+    color: #6A9B45;
+}
+#fotogudang img{
+    margin-left: 50%;
+    margin-top: 1.5%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0%);
+    margin-bottom: -20px;
+}
+
+.icontoko{
+    margin-top: -4%;
+    margin-left: 8.5%;
+    margin-bottom: -5.6%;
+    min-width: 150px;
+    width: 11%;
+    background-color: white;
+    padding: 30px 30px 30px 30px;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.icontoko img{
+    min-width: 50px;
+    width: 100%;
+}
+
+.namagudang{
+  margin-right: -12%;
+  margin-top: 16%;
+  margin-left: 12%;
+}
+
+.levelgudang{
+  margin-left: 12%;
+  margin-right: -12%;
+}
+
+.informasigudang .button-normal{
+  width: 125px;
+  border: none;
+  font-weight: 600;
+  color: white;
+  background-color: #6A9B45;
+  margin-top: 15%;
+  margin-left: 175%;
+  height: 40px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+}
+
+.button-normal{
+  margin: 10px 10px;
+  width: 100px;
+  border: none;
+  font-weight: 600;
+  color: white;
+  background-color: #6A9B45;
+  height: 40px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+}
+
+.button-normal:hover{
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  transform: scale(0.97);
+  transition: 0.22s ease;
+  background-color: #3b3b3b;
+  background-color: #95d167;
+}
+
+.sebelahan{
+    display: flex;
+}
+
+.sebelahan-product{
+  display: flex;
+  margin-left: 15%;
+}
+
+.sebelahan i {
+    margin: 5px;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(243, 181, 25);
+}
+
+.product img{
+    box-shadow: 0px -10px 30px #ccc;
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*Product.html*/
+
+.padding-text{
+  font-weight: 500;
+  color: white;
+  padding: 12px;
+  background-color: #6A9B45;
+  margin: 10px 10px 10px 0px;
+  border-radius: 5px;
+}
+
+.product-page{
+  width: 27%;
+  height: 25%;
+  min-width: 350px;
+  padding: 10px 12px 15px 12px;
+  border-radius: 15px;
+  margin: 30px 25px;
+  transition: 0.2s ease;
+}
+
+.product-page img{
+  box-shadow: 0px -10px 30px #ccc;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.icontoko-product{
+  margin-top: 5px;
+  margin-bottom: 20px;
+  min-width: 90px;
+  width: 11%;
+  background-color: white;
+  padding: 17px 17px 17px 17px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.edit-gudang{
+  margin-top: 3px;
+}
+
+.edit-gudang i{
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.edit-gudang button{
+  margin-left: 10px;
+  background: none;
+  border: none;
+}
+
+#Gudang h2{
+  margin-left: 0.5%;
+  margin-bottom: 5px;
+}
+
+#tambah-gudang{
+  margin-top: -5px;
+  margin-left: 5px;
+  background: none;
+  border: none;
+}
+
+#tambah-gudang i{
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.Success-payment{
+  text-align: center;
+}
+
+.Success-payment h2{
+  margin-bottom: 12px;
+}
+
+.Success-payment h4{
+  margin-bottom: 10px;
+}
+
+.Success-payment img{
+  width: 150px;
+  margin-bottom: 12px;
+}
+
+.sebelahan .rating-angka{
+  margin-left: 7px;
+  margin-top: -3.5px;
+}
+
+.icontoko-product img{
+  min-width: 40px;
+  width: 100%;
+}
+
+.ganti-status-pesanan{
+  margin-top: -15px;
+  margin-left: -10px;
+  margin-bottom: 4px;
+}
+
+.pembayaran2{
+  margin-top: 15px;
+}
+
+.icon-pembayaran{
+  width: 180px;
+  margin-top: -9px;
+  margin-bottom: 10px;
+}
+
+.pilihan-pembayaran{
+  margin-left: 6.5%;
+  text-align: center;
+}
+
+.pilihan-pembayaran h2{
+  margin-bottom: 10px;
+}
+
+.pilihan-pembayaran .sebelahan{
+  transform: translate(37%, 0%);
+}
+
+.pilihan-pembayaran button{
+  background-color: #95d167;
+  border: none;
+  border-radius: 5px;
+  margin-right: 15px;
+  width: 100px;
+  height: 50px;
+}
+
+.pilihan-pembayaran button:hover{
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  transform: scale(0.95);
+  transition: 0.22s ease;
+  background-color: #6A9B45;
+}
+
+.pilihan-pembayaran button img{
+  width: 70%;
+}
+
+.status-pemesanan-produk{
+  font-weight: medium;
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 1%;
+  background-color: #6A9B45;
+  margin-left: 10px;
+  margin-top: 2.5%;
+}
+
+.ganti-status-pesanan button{
+  width: 150px;
+}
+
+.share-like-product{
+  margin-left: 30%;
+  font-size: 20px;
+}
+
+.share-like-product button{
+  background: none;
+  border: none;
+}
+
+.share-like-product i{
+  color: #cacaca;
+  font-size: 30px;
+}
+
+.share-like-product i:hover{
+  cursor: pointer;
+  color: #6A9B45;
+  font-size: 30px;
+}
+
+.keterangan-pelanggan{
+  font-weight: 450;
+  text-align: justify;
+}
+
+.keterangan-product{
+  margin-top: 10px;
+  font-weight: 450;
+  width: 70%;
+  text-align: justify;
+}
+
+.description h4{
+    color: #803829;
+}
+
+#Container-Product{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0px;
+    flex-wrap: wrap;
+    margin-right: 5%;
+}
+
+.product{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px 15px 12px;
+    border: 1px solid #6A9B45;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+
+.product:hover{
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.1);
+    transform: scale(0.97);
+    transition: 0.22s ease;
+    background-color: #3b3b3b;
+    color: #fff;
+}
+
+#Container-Product{
+    display: flex;
+}
+
+#Kategori{
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 7%;
+}
+
+#Kategori h5{
+    color: #7b7b80;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#Kategori .judul{
+    color: #6A9B45;
+}
+
+/*Profil.html*/
+.profile{
+  margin-top: 20px;
+  margin-left: 15%;
+}
+
+.circle-profile{
+  width: 100px;
+  border-radius: 50%;
+}
+
+.circle-profile img{
+  width: 100%;
+}
+
+.nama-profile{
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.profile button{
+  background: none;
+  border: none;
+}
+
+.profile a{
+  margin-left: 60%;
+  margin-top: 2.5%;
+}
+
+.profile i{
+  font-size: 40px;
+  color: #6A9B45;
+}
+
+.profile i:hover{
+  cursor: pointer;
+  color: #707070;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.95);
+}
+
+.aktivitas{
+  margin-top: 3%;
+  margin-bottom: -1.5%;
+  margin-left: 14.5%;
+}
+
+.detail-proses-pengiriman{
+  margin-bottom: 10px;
+}
+
+.detail-proses-pengiriman h4{
+  margin-bottom: 5px;
+}
+
+.detail-proses-pengiriman h3{
+  color: #803829;
+}
+
+.detailgudang-proses a{
+  margin-left: -11.5%;
+}
+
+.detail-proses-pengiriman .sebelahan{
+  margin-top: 3px;
+  margin-left: -3px;
+}
+
+.detailgudang-proses{
+  margin-bottom: 4px;
+}
+
+/* Checkout */
+.checkout{
+  margin-top: 20px;
+  margin-left: 30%;
+  width: 700px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.border{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: -20px;
+  width: 700px;
+  border-top: 2px solid #979797;
+}
+.checkout h3{
+  font-weight: 400;
+}
+.checkout .harga{
+  margin-left: 10px;
+  font-weight: 550;
+  color: #803829;
+}
+.checkout .berat{
+  margin-bottom: 3px;
+  margin-top: 3px;
+  margin-left: 10px;
+}
+.checkout .produk{
+  margin-top: 22px;
+  margin-left: 10px;
+  font-weight: 550;
+}
+.checkout .gambar-produk{
+  margin-left: 4%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.checkout h4{
+  font-weight: 400;
+}
+.checkout h5{
+  font-weight: 400;
+}
+.checkout img{
+  width: 150px;
+}
+.checkout .keterangan{
+  margin-left: 3%;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+.Ringkasan-Belanja{
+  margin-left: 4.5%;
+}
+.bold-text{
+  font-weight: bold;
+}
+.keterangan-pengiriman{
+  border-radius: 10px;
+  margin-right: 45%;
+  padding: 10px;
+  border: 3px solid #979797;
+  margin-bottom: 20px;
+  margin-left: 4%;
+}
+.jarak-pengiriman{
+  padding-right: 20px;
+}
+.Total-harga-pembayaran .button-normal{
+  width: 160px;
+}
+.Total-harga-pembayaran a{
+  margin-top: 25px;
+  margin-left: 0%;
+}
+.totalharga{
+  margin-left: 3%;
+  margin-top: 10px;
+}
+#logo-gudang{
+  width: 57px;
+}
+.product-checkout{
+  margin-top: -3%;
+}
+.pembayaran-checkout{
+  margin-top: -25px;
+}
+
+/*Slider*/
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  .card{
+    border-radius: 25px;
+    background-color: #FFF;
+  }
+  .image-content,
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+  }
+  .image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+  }
+  .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070F4;
+    border-radius: 25px 25px 0 25px;
+  }
+  .overlay::before,
+  .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070F4;
+  }
+  .overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+  }
+  .card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+  }
+  .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070F4;
+  }
+  .name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  .description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+  }
+
+  .btn-masuk{
+    font-weight: 600;
+    margin-right: 70px;
+    width: 100px;
+    height: 32px;
+    margin-top: 0px;
+    background:none;
+    border: 3px solid;
+    color: white;
+    border-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-masuk:hover {
+    border-color: #95d167;
+    background-color: #95d167;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.95);
+}
+
+.btn-daftar{
+  font-weight: 600;
+  margin-left: -50px;
+  width: 100px;
+  height: 32px;
+  margin-top: 0px;
+  border: 3px solid;
+  background:#fff;
+  color: rgb(0, 0, 0);
+  border-color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btn-daftar:hover {
+  border-color: #95d167;
+  background-color: #95d167;
+  color: rgb(255, 255, 255);
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.95);
+}
+
+footer{
+  border-top: 3px solid #6A9B45;
+  padding: 50px 0px 50px 0px;
+  background-color: #e3ffce;
+  color: #000000;
+}
+.pembayaranbank img{
+  margin-bottom: 5px;
+  margin-left: 5px;
+  width: 150px;
+}
+.footerpembayaran{
+  margin-right: -4%;
+}
+.pembayarandigital img{
+  margin-left: 5px;
+  width: 150px;
+}
+.garis-footer{
+  width: 1000px;
+  margin: auto;
+}
+.layar-dalam{
+  width: 1000px;
+  margin: auto;
+}
+footer .layar-dalam {
+  /*Untuk jadiin gk turun ke bawah tpi jadiin row*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .layar-dalam div {
+  width: 20%;
+}
+footer .layar-dalam h4 {
+  margin-top: 0px;
+  font-size: 15px;
+  font-weight: 450;
+}
+footer .garis-footer .copyright {
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid #6A9B45;
+  text-align: center;
+}
+
+#contact h3{
+  font-size: 20px;
+  margin: 0px 0px 15px 5px;
+
+}
+.footerlogo{
+  margin-top: -10px;
+  margin-left: -7.5%;
+}
+.footerproduk h4{
+  padding: 0px 0px 15px 5px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  margin: 0;
+}
+.footerproduk a{
+  text-decoration: none;
+}
+footer h4:hover{
+  /*Ngasih efek berubah warna kalo menunya diarahin cursor*/
+  color: #6A9B45;
+  transition: 0.3s;
+}
+.footertentang a{
+  text-decoration: none;
+}
+  
+  .swiper-navBtn{
+    color: #6E93f7;
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover{
+    color: #4070F4;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after{
+    font-size: 35px;
+  }
+  .swiper-button-next{
+    right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  }
+  .swiper-pagination-bullet{
+    background-color: #6E93f7;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #4070F4;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navBtn{
+      display: none;
+    }
+  }
+
+  @media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #E7FFD5;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover{
+        background: none;
+        color: #6A9B45;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
+  

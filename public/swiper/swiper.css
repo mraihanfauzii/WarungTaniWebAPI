@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body{
+    min-height: 100vh;
+    background: #efefef;
+}
+
+/*Flashsale*/
+
+.container{
+    z-index: 0;
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.slide-container-rekomendasi{
+    margin: 0 30px;
+    overflow: hidden;
+}
+
+.slide-container-gudang{
+    margin: 0 30px;
+    overflow: hidden;
+}
+
+.slide-container-flashsale{
+    margin: 0 30px;
+    overflow: hidden;
+}
+
+.slide-container-transaksi{
+    margin: 0 30px;
+    overflow: hidden;
+}
+
+.slide-container-wishlist{
+    margin: 0 30px;
+    overflow: hidden;
+}
+
+.card{
+    background: #fff;
+    border-radius: 8px;
+}
+
+.card .image-box{
+    height: 180px;
+}
+
+.card .image-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card .produk{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 15px;
+}
+
+.card .produk img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+#normalprice{
+    color: #905144;
+}
+
+#discountprice{
+    color: #905144;
+}
+
+#jarak{
+    color: #905144;
+    text-align: center;
+    font-weight: bold;
+}
+
+#nama{
+    text-align: center;
+    font-weight: 500;
+}
+
+/*Gudang*/
+
+.container-gudang{
+    z-index: 0;
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.card-gudang{
+    background: #fff;
+    border-radius: 8px;
+}
+
+.card-gudang .image-box-gudang{
+    border-radius: 8px 8px 0 0;
+    background-color: #6A9B45;
+    height: 100px;
+}
+
+.card-gudang .image-box-gudang img{
+    left: 50%;
+    right: 50%;
+    transform: translate(75%, 70%);
+    width: 40%;
+    height: 40%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-gudang .gudang{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 15px;
+}
+
+.card-gudang .gudang img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
