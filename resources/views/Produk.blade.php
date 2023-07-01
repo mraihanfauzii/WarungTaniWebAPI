@@ -23,10 +23,10 @@
                 </div>
                 <div>
                     <br><br>
-                    <h4> {{ $Product[0]->name }}</h4>
-                    <h3>Rp. {{ number_format($Product[0]->price, 0)}}.-</h3>
+                    <h4 class="product-name"> {{ $Product[0]->name }}</h4>
+                    <h3 class="product-price">Rp. {{ number_format($Product[0]->price, 0)}}.-</h3>
                     <div class="sebelahan">
-                        <div class="sebelahan">
+                        <div class="sebelahan" style="margin-top:7px; margin-left:-7px;">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -45,7 +45,6 @@
                                     
                                     <a href="/home/product/{{ $Product[0]->id }}/edit"><button id="edit-product"><i class="fa-solid fa-pen-to-square"></i></button></a>
                                 @endif
-                                <button id="share"><i class="fa-solid fa-share"></i></button>
                                 <form action="/home/product/wishlist/create" method="post">
                                 @csrf
                                     <input type="hidden" name="user_id" value={{ $user->id }}>

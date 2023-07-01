@@ -9,6 +9,7 @@
 
 body{
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 
 nav {
@@ -23,6 +24,7 @@ nav {
 }
 
 label.logo {
+    cursor: pointer;
     color: white;
     font-size: 35px;
     line-height: 80px;
@@ -111,8 +113,14 @@ nav ul li i {
 /*Main*/
 
 .judul{
-  margin-left: 14%;
+  text-align: center;
+  margin-bottom: -20px;
+  font-size: 22px;
+}
+
+.judul-gudang{
   margin-bottom: -1.8%;
+  color: #6A9B45;
 }
 
 #fotogudang{
@@ -120,6 +128,7 @@ nav ul li i {
     background-color: #E7FFD5;
 }
 #fotogudang h4{
+  z-index: -1;
     text-align: center;
     color: #6A9B45;
 }
@@ -133,11 +142,13 @@ nav ul li i {
 }
 
 .icontoko{
-    margin-top: -4%;
+    position: relative;
+    z-index: 1;
+    margin-top: -50px;
     margin-left: 8.5%;
-    margin-bottom: -5.6%;
+    margin-bottom: -85px;
     min-width: 150px;
-    width: 11%;
+    width: 100px;
     background-color: white;
     padding: 30px 30px 30px 30px;
     box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.1);
@@ -167,7 +178,7 @@ nav ul li i {
   color: white;
   background-color: #6A9B45;
   margin-top: 15%;
-  margin-left: 175%;
+  margin-left: 25%;
   height: 40px;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
@@ -220,19 +231,30 @@ nav ul li i {
 
 /*Product.html*/
 
-.padding-text{
+.product-name{
   font-weight: 500;
-  color: white;
+  font-size: 18px;
+}
+
+.product-price{
+  color: #803829;
+}
+
+.padding-text{
+  font-weight: 600;
+  color: #6A9B45;
   padding: 12px;
-  background-color: #6A9B45;
+  border-color: #6A9B45;
+  border: 2px solid #6A9B45;
   margin: 10px 10px 10px 0px;
   border-radius: 5px;
 }
 
 .product-page{
-  width: 27%;
+  width: 100%;
   height: 25%;
-  min-width: 350px;
+  max-width: 350px;
+  min-width: 200px;
   padding: 10px 12px 15px 12px;
   border-radius: 15px;
   margin: 30px 25px;
@@ -250,7 +272,7 @@ nav ul li i {
   margin-top: 5px;
   margin-bottom: 20px;
   min-width: 90px;
-  width: 11%;
+  width: 50px;
   background-color: white;
   padding: 17px 17px 17px 17px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
@@ -414,7 +436,8 @@ nav ul li i {
   text-align: justify;
 }
 
-.description h4{
+.description h5{
+  font-size: 18px;
     color: #803829;
 }
 
@@ -429,14 +452,24 @@ nav ul li i {
 .product{
     width: 23%;
     min-width: 250px;
-    padding: 10px 12px 15px 12px;
-    border: 1px solid #6A9B45;
+    padding: 10px 12px 20px 12px;
     background-color: white;
     border-radius: 15px;
     cursor: pointer;
-    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
     margin: 15px 0;
     transition: 0.2s ease;
+}
+
+.product-slider{
+  width: 23%;
+  min-width: 250px;
+  background-color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  margin: 15px 0;
+  transition: 0.2s ease;
 }
 
 .product:hover{
@@ -452,7 +485,7 @@ nav ul li i {
 }
 
 #Kategori{
-    margin-top: 4%;
+    margin-top: 84px;
     margin-left: 4%;
     margin-right: 7%;
 }
@@ -461,10 +494,6 @@ nav ul li i {
     color: #7b7b80;
     cursor: pointer;
     margin-top: 5px;
-}
-
-#Kategori .judul{
-    color: #6A9B45;
 }
 
 /*Profil.html*/
@@ -510,9 +539,10 @@ nav ul li i {
 }
 
 .aktivitas{
+  font-size: 22px;
+  text-align: center;
   margin-top: 3%;
-  margin-bottom: -1.5%;
-  margin-left: 14.5%;
+  margin-bottom: -25px;;
 }
 
 .detail-proses-pengiriman{
@@ -540,11 +570,31 @@ nav ul li i {
   margin-bottom: 4px;
 }
 
+.checkout .form-daftar .nama{
+  margin-left: 100px;
+  margin-bottom: 15px;
+}
+
+.checkout .form-daftar .email{
+  margin-left: 104px;
+  margin-bottom: 15px;
+}
+
+.checkout .form-daftar .password{
+  margin-left: 73px;
+  margin-bottom: 15px;
+}
+
+.checkout .form-daftar .confirm-password{
+  margin-left: 3px;
+  margin-bottom: 15px;
+}
+
 /* Checkout */
 .checkout{
   margin-top: 20px;
   margin-left: 30%;
-  width: 700px;
+  max-width: 700px;
   padding: 20px;
   background-color: white;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
@@ -554,7 +604,7 @@ nav ul li i {
   margin-top: 15px;
   margin-bottom: 15px;
   margin-left: -20px;
-  width: 700px;
+  max-width: 700px;
   border-top: 2px solid #979797;
 }
 .checkout h3{
@@ -703,7 +753,8 @@ nav ul li i {
     color: #333;
   }
   .description{
-    font-size: 14px;
+    margin-top: 10px;
+    font-size: 16px;
     color: #707070;
     text-align: center;
   }
@@ -750,50 +801,54 @@ nav ul li i {
   transition: all 0.2s ease-in-out;
   transform: scale(0.95);
 }
-
+/* Footer */
 footer{
   border-top: 3px solid #6A9B45;
-  padding: 50px 0px 50px 0px;
+  padding: 30px 0px 30px 0px;
   background-color: #e3ffce;
   color: #000000;
+  width: 100%;
+  height: auto;
 }
 .pembayaranbank img{
   margin-bottom: 5px;
-  margin-left: 5px;
-  width: 150px;
-}
-.footerpembayaran{
-  margin-right: -4%;
+  max-width: 150px;
 }
 .pembayarandigital img{
-  margin-left: 5px;
-  width: 150px;
+  max-width: 150px;
 }
 .garis-footer{
-  width: 1000px;
-  margin: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 1500px;
 }
 .layar-dalam{
   width: 1000px;
   margin: auto;
 }
-footer .layar-dalam {
+footer .container {
   /*Untuk jadiin gk turun ke bawah tpi jadiin row*/
-  display: flex;
+  margin-left: 23%;
+  margin-right: 17%;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0px;
   flex-direction: row;
-  justify-content: space-between;
 }
-footer .layar-dalam div {
+footer .container div {
   width: 20%;
 }
-footer .layar-dalam h4 {
+footer .container h4 {
   margin-top: 0px;
   font-size: 15px;
   font-weight: 450;
 }
 footer .garis-footer .copyright {
+  height: auto;
+  position: relative;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 10px;
   padding-top: 30px;
   border-top: 2px solid #6A9B45;
   text-align: center;
@@ -801,30 +856,29 @@ footer .garis-footer .copyright {
 
 #contact h3{
   font-size: 20px;
-  margin: 0px 0px 15px 5px;
-
+  margin: 0px 0px 15px -5px;
 }
 .footerlogo{
   margin-top: -10px;
-  margin-left: -7.5%;
+}
+.footerpembayaran{
+  margin-left: 30%;
 }
 .footerproduk h4{
-  padding: 0px 0px 15px 5px;
+  padding: 0px 0px 15px 0px;
   color: #000000;
   font-weight: normal;
   text-decoration: none;
-  margin: 0;
+  text-align: center;
 }
 .footerproduk a{
+  width: 100%;
   text-decoration: none;
 }
 footer h4:hover{
   /*Ngasih efek berubah warna kalo menunya diarahin cursor*/
   color: #6A9B45;
   transition: 0.3s;
-}
-.footertentang a{
-  text-decoration: none;
 }
   
   .swiper-navBtn{
@@ -861,17 +915,58 @@ footer h4:hover{
     }
   }
 
-  @media (max-width: 952px){
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
+@media (max-width: 1300px){
+  .checkout{
+    margin-left: 20%;
+  }
+  #Gudang .sebelahan{
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 952px){
+  .checkout{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .sebelahan-product{
+    display: flex;
+    margin-left: 10%;
+  }
+  #Gudang .sebelahan{
+    margin-left: 20px;
+  }
+  label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
 }
 
 @media (max-width: 858px){
+  .checkout .form-daftar .label-box{
+    margin-left: 0;
+  }
+  .checkout{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .sebelahan-product{
+    display: flex;
+    margin-left: 5%;
+  }
+  footer .container {
+    /*Untuk jadiin gk turun ke bawah tpi jadiin row*/
+    margin-left: 15%;
+    margin-right: 10%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+    flex-direction: row;
+  }
     .checkbtn{
         display: block;
     }
@@ -879,16 +974,14 @@ footer h4:hover{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #E7FFD5;
+        background: #2f502c;
         top: 80px;
         left: -100%;
         text-align: center;
         transition: all .5s;
     }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
+    nav ul .items{
+      display: block;
     }
     nav ul li a{
         font-size: 20px;
@@ -901,5 +994,30 @@ footer h4:hover{
         left: 0;
     }
 
+}
+@media screen and (max-width: 650px) {
+  .checkout .sebelahan .gambar-produk{
+    display: none;
+  }
+  .informasigudang .icontoko-product{
+    display: none;
+  }
+  .sebelahan-product{
+    display: flex;
+    margin-left: -5%;
+  }
+  footer .footerlogo img{
+    width: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sebelahan-product .product-page{
+    display: none;
+  }
+  .sebelahan-product{
+    display: flex;
+    margin-left: 5%;
+  }
 }
   

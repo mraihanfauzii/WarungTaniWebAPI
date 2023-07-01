@@ -14,7 +14,7 @@
         @extends('navbar')
         <br><br><br><br><br>
         <main>
-            <h2 style="font-weight: 600; margin-left: 31%;">Orderan</h2>
+            <h2 style="font-weight: 600; margin-left: 3%; text-align:center;">Orderan</h2>
             @foreach ($orders as $order)
                 <div class="checkout">
                     <h2 style="font-weight: 600; margin-left: 3%;">Pesanan</h2>

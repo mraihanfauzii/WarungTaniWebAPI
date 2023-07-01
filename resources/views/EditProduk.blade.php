@@ -42,7 +42,7 @@
                 @csrf
                 Nama Produk : <input type="text" name="name" id="NIM" value="{{ $Product->name }}" size="20" style="margin-left: 102px;"><br><br>
                 Harga Produk : <input type="number" name="price" id="NIM" value={{ $Product->price }} size="10" style="margin-left: 102px;"><br><br>
-                Foto Produk : <input type="file" name="image" style="margin-left: 115px;"> <br><br>
+                Foto Produk : <input type="text" name="image_link" style="margin-left: 115px;" value={{ $Product->image_link }}> <br><br>
                 <div style="display: flex;">
                     <label for="Alamat Bandung" style="margin-right: 10px; margin-top: 30px;">Informasi Produk : </label>
                     <textarea id="Alamat Bandung" name="description" rows="5" cols="20" style="margin-left: 70px;">{{ $Product->description }}</textarea><br><br>

@@ -18,18 +18,18 @@
 
 
 <footer id = "contact">
-    <div class = "layar-dalam">
+    <div class = "container">
         <div class="footerproduk">
             <h3>Pengguna</h3>
             @if($is_admin)
-                <a href="/home/admin"><h4>Admin Page</h4></a>
+                <a href="/home/admin"><h4>Admin&nbsp;Page</h4></a>
             @endif
             <a href="/home"><h4>Dashboard</h4></a>
-            <a href="/home/cart"><h4>Cart</h4></a>
-            <a href="/home/profile"><h4>Profile</h4></a>
+            <a href="/home/cart"><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cart</h4></a>
+            <a href="/home/profile"><h4>&nbsp;&nbsp;&nbsp;&nbsp;Profile</h4></a>
         </div>
         <div class="footerlogo">
-            <div class="pembayaranluar"><img src="/images/Logo.png" alt=""></div>
+            <img src="/images/Logo.png" alt="">
         </div>
         <div class="footerpembayaran">
             <h3>Pembayaran</h3>

@@ -14,7 +14,7 @@
         @extends('navbar')
         <br><br><br><br>
         <main>
-            <div class="checkout" style="height: 900px;">
+            <div class="checkout" style="max-height: 900px;">
                 <h2 style="font-weight: 600; margin-left: 3%;">Keranjang</h2>
                 <div class="border"></div>
                 <br>

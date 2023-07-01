@@ -25,13 +25,13 @@
             <br>
             <div class="sebelahan">
                 <section id="Kategori">
-                    <h4 class="judul">Kategori</h4>
+                    <h4 class="judul-gudang">Kategori</h4>
                     <h5>Makanan</h5>
                     <h5>Kebutuhan&nbsp;Pokok</h5>
                     <h5>Alat&nbsp;Dapur</h5>
                     <h5>Bumbu&nbsp;Dapur</h5>
                     <br>
-                    <h4 class="judul">Filter</h4>
+                    <h4 class="judul-gudang">Filter</h4>
                     <h5>Harga</h5>
                     <h5>Ulasan</h5>
                 </section>
@@ -84,8 +84,8 @@
                             <div class="product" onclick="window.location.href='/home/product/{{ $Product->id }}'">
                                 <img src= {{ $Product->image_link }} alt="">
                                 <div class="description">
-                                    <h5>{{ $Product->name }}</h5>
-                                    <h4>Rp. {{ number_format($Product->price, 0)}}.</h4>
+                                    <h4>{{ $Product->name }}</h4>
+                                    <h5>Rp. {{ number_format($Product->price, 0)}}</h5>
                                 </div>
                             </div>
                         @endforeach

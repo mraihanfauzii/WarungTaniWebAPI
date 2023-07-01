@@ -24,18 +24,17 @@
     <a href="/home"><label class="logo">Warung Tani</label></a>
     <ul>
         <br><br><br><br>
-        <li class="search">
-            <input type="search" placeholder="Search">
-            <label class="icon">
-                <span class="fa-solid fa-magnifying-glass"></span>
-            </label>
-        </li>
+        
         @if($isLoggedIn)
         <div class="items">
-            <li><a href="#"><i class="fa-solid fa-bell" style="font-size: 28px; margin-right: 25px;"></i></a></li>
-            <li><a href="#"><i class="fa-solid fa-envelope" style="font-size: 28px;margin-right: 25px;"></i></a></li>
-            <li><a href="/home/cart"><i class="fa-solid fa-cart-shopping" style="font-size: 28px;margin-right: 25px;"></i></a></li>
-            <li><a href="/home/profile"><i class="fa-solid fa-user" style="font-size: 28px;"></i></a></li>
+            <li style="margin-right: 25px;"><a href="/home/cart"><i class="fa-solid fa-cart-shopping" style="font-size: 28px;color:white;"></i>
+                    <span style="color:white;">Keranjang</span>
+                </a>
+            </li>
+            <li><a href="/home/profile"><i class="fa-solid fa-user" style="font-size: 28px;"></i>
+                    <span style="color:white;">Profile</span>
+                </a>
+            </li>
         </div>
         @else
         <div class="items">

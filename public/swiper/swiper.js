@@ -20,7 +20,7 @@ var swiperFlashsale = new Swiper(".slide-container-flashsale", {
       0: {
         slidesPerView: 1,
       },
-      520: {
+      470: {
         slidesPerView: 2,
       },
       768: {
@@ -57,7 +57,7 @@ var swiperFlashsale = new Swiper(".slide-container-flashsale", {
         200: {
         slidesPerView: 2,
         },
-        400: {
+        480: {
         slidesPerView: 3,
         },
         600: {
@@ -95,7 +95,7 @@ var swiperRekomendasi = new Swiper(".slide-container-rekomendasi", {
         0: {
         slidesPerView: 1,
         },
-        520: {
+        470: {
         slidesPerView: 2,
         },
         768: {

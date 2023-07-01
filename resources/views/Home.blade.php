@@ -77,12 +77,12 @@
             </div>
         </section>
 
-        {{-- <h3 class="judul">Gudang Terdekat</h3> --}}
-        <div class="sebelahan">
+        <br>
+        <div class="sebelahan" style="justify-content:center;">
             <h3 class="judul">Gudang Terdekat</h3>
             @if($isLoggedIn)
                 @if($is_admin)
-                    <a href="/home/store/create"><button id="tambah-gudang"><i class="fa-solid fa-square-plus"></i></button></a>
+                    <a href="/home/store/create" style="margin-bottom:-25px;"><button id="tambah-gudang"><i class="fa-solid fa-square-plus"></i></button></a>
                 @endif
             @endif
         </div>
@@ -115,6 +115,7 @@
             </div>
         </section>
 
+        <br>
         <h3 class="judul">Rekomendasi</h3>
         <section id="Rekomendasi">
             <div class="container swiper">
