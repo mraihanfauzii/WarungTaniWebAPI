@@ -6,7 +6,7 @@ Warung Tani merupakan marketplace yang menyediakan jasa berupa perantara antara 
 
 - Customer : Melakukan autentikasi kemudian dapat membeli barang(sayur dan buah) dengan berbagai dukungan fitur pada aplikasi warung tani yang mempermudah mereka dalam mencari sayur dan buah-buahan yang berkualitas.
 
-- Menambahkan barang(sayur dan buah), mengedit informasi barang, menambahkan gudang, mengedit informasi gudang, menghapus gudang, mengubah proses setiap transaksi mulai dari konfirmasi pembayaran ke pemesanan sedang diproses ke pengiriman.
+- Admin : Menambahkan barang(sayur dan buah), mengedit informasi barang, menambahkan gudang, mengedit informasi gudang, menghapus gudang, mengubah proses setiap transaksi mulai dari konfirmasi pembayaran ke pemesanan sedang diproses ke pengiriman.
 
 ## Autentikasi
 
